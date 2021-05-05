@@ -1,0 +1,76 @@
+rent - 750
+internet - 35
+heat - 40
+car insurance / renters - 130
+car payment - 528
+phone bill - 50
+best buy - 35
+lasik - 113
+groceries - 100
+gas - 60
+student loan - 80
+
+alert for onclick
+boolean expressions
+
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+- generatePassword() function - need to connect this to the onClick event with the button
+--commit after
+
+THEN I am presented with a series of prompts for password criteria
+- need to prompt user
+
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+- need the length to be valid
+	-- assign this to a variable called passwordLength
+	-- check whether passwordLength is valid
+		-- valid means: needs to be at least 8 characters, no more than 128 characters
+		if password.Length >= 8 characters AND <= 128 characters
+
+WHEN prompted for character types to include in the password
+THEN I choose lowercase, uppercase, numeric, and/or special characters
+	--boolean variables
+
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+	--at least one of lowercase, uppercase, numeric, special has to be true
+
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+	-- generate password
+	-- since it's random, it's going to involve Math.random()
+	-- the rock/paper/scissors activity already addressed selecting randomly from arrays
+
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+	-- last piece is to display the password
+	-- console.log the password before displaying it 
+
+boolean = use another kind of prompt? confirm prompt
+
+
+
+function getRandomLower() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+
+function getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+
+function getRandomSymbol() {
+  const symbols = '!@#$%^&*()_+=<>/?';
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
+ FFAR: Agency Suppressor, 19,5" Reinforced Heavy, Field Agent Grip, STANAG 50 Rnd, Raider Stock
+SP-R 208: Monolithic Suppressor, SP-R 26" Barrel, Tac Laser, Solozero SP-R 28mm Optic, .300 Norma Mag 5-R Mags
